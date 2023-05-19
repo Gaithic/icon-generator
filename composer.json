@@ -1,0 +1,25 @@
+{
+    "name": "rohitgautam/icon",
+    "description": "svg icon package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rohitgautam\\Icon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rohitgautam\\Icon\\SvgIconsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Rohit Gautam",
+            "email": "rohitgautamofficialmail@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -21,5 +21,8 @@
             "email": "rohitgautamofficialmail@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

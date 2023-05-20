@@ -9,7 +9,8 @@ class SvgIconsServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        
+        //merge package config with root 
+        // $this->mergeConfigFrom(__DIR__.'/../config/icons.php', 'svg-icons');
     }
 
     public function boot()
@@ -38,6 +39,13 @@ class SvgIconsServiceProvider extends ServiceProvider
         $this->app->singleton('SvgIconHelper', function () {
             return new SvgIconHelper();
         });
+
+        //publish the service
+        $this->publishes([
+            __DIR__.'/../config/icons.php' => config_path('icons.php'),
+        ], 'config');
     }
+
+    
     
 }
